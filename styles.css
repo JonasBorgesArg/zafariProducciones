@@ -246,6 +246,12 @@ img{
 	margin: 1px 0;
 }
 
+@font-face {
+  font-family: 'Viner Hand ITC';
+  src: url('fonts/VINERITC.TTF') format('ttf');
+  font-style: normal;
+  font-weight: normal;
+}
 .titulo{
 	color: var(--main-color);
   font-family: "Viner Hand ITC";
