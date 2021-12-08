@@ -15,12 +15,12 @@ body{
 	background: #121212;
 	color: #fff;
 	font-size: 16px;
-	font-family: 'Oswald', sans-serif;
 }
 
 a{
 	text-decoration: none;
 	color: #fff;
+		font-family: 'Oswald', sans-serif;
 }
 
 a:hover{
@@ -70,7 +70,7 @@ img{
 	color: var(--main-color);
 	padding-left: 1rem;
 	font-size: 25px;
-	font-family: "Viner Hand ITC";
+	font-family: 'Bangers', cursive;
 	font-weight: bold;
 
 }
@@ -171,8 +171,7 @@ img{
 
 .zafari {
   color: var(--main-color);
-  font-family: "Viner Hand ITC";
-  font-weight: bold;
+  font-family: 'Bangers', cursive;
   font-size: 4rem;
   text-shadow: 2px 2px 5px black;
   padding: 8px 12px;
@@ -184,6 +183,7 @@ img{
 .descripcion{
 	color: #f2f2f2;
   font-size: 1rem;
+  	font-family: 'Oswald', sans-serif;
   text-shadow: 2px 2px 5px black;
   padding: 0 10%;
   position: absolute;
@@ -242,19 +242,15 @@ img{
 
 .profile h3{
 	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
 	text-shadow: 2px 2px 5px black;
 	margin: 1px 0;
 }
 
-@font-face {
-  font-family: 'Viner Hand ITC';
-  src: url('fonts/VINERITC.TTF') format('ttf');
-  font-style: normal;
-  font-weight: normal;
-}
+
 .titulo{
 	color: var(--main-color);
-  font-family: "Viner Hand ITC";
+  font-family: 'Bangers', cursive;
   font-weight: bold;
   font-size: 3rem;
   text-shadow: 2px 2px 2px black;
@@ -310,14 +306,22 @@ img{
 	cursor: pointer;
 }
 
-.card-proyecto a i{
+.enlace-icono{
+	display: inline-block;
 	position: relative;
 	border-radius: 10%;
 	font-size: 4rem;
-	bottom: 40%;
-	left: 40%;
-	text-shadow: 2px 2px 2px black;
+	left: 45%;
 }
+
+.enlace-icono a {
+	position: absolute;
+	bottom: 2.5em;
+}
+.enlace-icono a i{
+	text-shadow: 2px 2px 4px black;
+} 
+
 
 
 											/*modal*/
@@ -371,6 +375,7 @@ img{
 
 .modal h2{
 	position: relative;
+	font-family: 'Oswald', sans-serif;
 	bottom: 40rem;
 	text-align: center;
 	font-size: 4rem;
@@ -379,18 +384,15 @@ img{
 
 @media screen and (max-width: 768px) {
 	.proyectos{
-	display: grid;
-	grid-template-columns: repeat(1, 3fr);
+		flex-wrap: wrap;
 	}
 	.card-proyecto img{
 	max-height: 950px;
 	}
-	.card-proyecto a i{
-	left: 0;
-	display: flex;
-  justify-content: center;
-
+	.enlace-icono a{
+		bottom: 3.5em;
 	}
+	
 	.modal h2{
 		bottom: 30rem;
 		left: 0;
@@ -495,8 +497,7 @@ img{
 .ig h1{
 	text-align: center;
 	color: var(--main-color);
-  font-family: "Viner Hand ITC";
-  font-weight: bold;
+  font-family: 'Bangers', cursive;
   font-size: 3rem;
   text-shadow: 2px 2px 2px black;
 }
@@ -512,6 +513,7 @@ img{
 .footer{
 	background: rgba(152, 152, 152, 0.1);
 	color: gray;
+	font-family: 'Oswald', sans-serif;
 	font-size: 12px;
 	padding: 20px 0;
 	text-align: center;
